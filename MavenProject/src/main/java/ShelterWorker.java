@@ -49,6 +49,7 @@ public class ShelterWorker {
 
     public void addAnimal(Animal animal){
         animals.add(animal);
+        animal.setShelterWorker(this);
     }
 
     @Override
@@ -57,7 +58,6 @@ public class ShelterWorker {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
-                ", animals=" + animals +
                 '}';
     }
 }

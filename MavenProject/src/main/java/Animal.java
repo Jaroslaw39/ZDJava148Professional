@@ -6,12 +6,12 @@ public class Animal {
     private String race;
     private ShelterWorker shelterWorker;
 
-    public Animal(int id, String name, int age, String race, ShelterWorker shelterWorker) {
+    public Animal(int id, String name, int age, String race) {
         this.id = id;
         this.name = name;
         this.age = age;
         this.race = race;
-        this.shelterWorker = shelterWorker;
+
     }
 
     public int getId() {
