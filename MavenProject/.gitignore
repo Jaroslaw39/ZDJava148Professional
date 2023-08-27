@@ -10,6 +10,9 @@ target/
 .idea/libraries/
 .idea/uiDesigner.xml
 .idea/workspace.xml
+.idea/encodings.xml
+.idea/misc.xml
+.idea/vcs.xml
 *.iws
 *.iml
 *.ipr
