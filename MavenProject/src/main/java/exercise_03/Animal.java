@@ -1,3 +1,5 @@
+package exercise_03;
+
 public class Animal {
 
     private int id;
