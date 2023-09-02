@@ -6,7 +6,7 @@ public class Main {
 
         Tuple<Integer> tuple01 = new Tuple<>(4,8);
 
-        tuple01.getMax();
-        tuple01.getMin();
+        System.out.println(tuple01.getMax());
+        System.out.println(tuple01.getMin());
     }
 }
