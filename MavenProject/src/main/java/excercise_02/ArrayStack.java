@@ -2,18 +2,18 @@ package excercise_02;
 
 import java.util.EmptyStackException;
 
-public class ArrayStack implements Stack {
+public class ArrayStack<T> implements Stack<T> {
 
-    private String[] stackData;
+    private T[] stackData;
     private int buffor = 4;
     private int top = -1;
 
     public ArrayStack() {
-        stackData = new String[buffor];
+        stackData = (T[]) new Object[buffor];
     }
 
     @Override
-    public void push(String object) throws FullStackException {
+    public void push(T object) throws FullStackException {
 
         if(top >= stackData.length - 1){
             throw new FullStackException();
@@ -23,7 +23,7 @@ public class ArrayStack implements Stack {
     }
 
     @Override
-    public String pop() throws EmptyStackException {
+    public T pop() throws EmptyStackException {
         if(isEmpty()){
             throw  new EmptyStackException();
         }
@@ -32,7 +32,7 @@ public class ArrayStack implements Stack {
     }
 
     @Override
-    public String peek() throws EmptyStackException {
+    public T peek() throws EmptyStackException {
         if(isEmpty()){
             throw new EmptyStackException();
         }
