@@ -1,19 +1,19 @@
 package excerciseaddnotation;
 
-public class Class {
+public class TypicalClass {
 
     private int age;
     private String name;
     private Person person;
 
 
-    public Class() {
+    public TypicalClass() {
         this.age = 0;
         this.name = "";
         person = new Person(0,0);
     }
 
-    public Class(int age, String name, Person person) {
+    public TypicalClass(int age, String name, Person person) {
         this.age = age;
         this.name = name;
         this.person = person;
