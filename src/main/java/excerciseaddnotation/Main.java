@@ -20,7 +20,7 @@ public class Main {
 
         //Methods amount
         Method[] methods = classInfo.getMethods();
-        System.out.println("Methods amount: " + methods);
+        System.out.println("Methods amount: " + methods.length);
 
         System.out.println("Return types of methods and method names: ");
 
